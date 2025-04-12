@@ -27,7 +27,7 @@ function Feed() {
   useEffect(() => {
     const fetchMedia = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/media?access_token=${accessToken}`);
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/media?access_token=${accessToken}`);
         const data = await res.json();
 
         if (data.error) {

@@ -12,7 +12,7 @@ function Dashboard() {
 
     async function fetchDashboardData() {
       try {
-        const res = await fetch(`http://localhost:5000/api/dashboard?access_token=${accessToken}`);
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/dashboard?access_token=${accessToken}`);
         const data = await res.json();
 
         const updatedTopPosts = (data.stats?.topPosts || []).map((post) => ({
