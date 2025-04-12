@@ -36,7 +36,7 @@ app.get("/auth/instagram/callback", async (req, res) => {
     });
 
     const access_token = tokenRes.data.access_token;
-    res.redirect(`http://localhost:5173/feed?token=${access_token}`);
+    res.redirect(`${process.env.FRONTEND_URL}/feed?token=${access_token}`);
   } catch (error) {
     console.error("Error getting access token:", error?.response?.data || error.message);
     res.status(500).json({ error: "Failed to get access token" });
