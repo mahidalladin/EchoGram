@@ -30,7 +30,7 @@ function Landing() {
         <motion.a
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          href="http://localhost:5000/auth/instagram"
+          href={`${import.meta.env.VITE_API_URL}/auth/instagram`}
           className="inline-block mt-6 bg-white text-purple-700 px-6 py-3 rounded-xl shadow-md font-semibold hover:bg-gray-100 transition text-lg"
         >
           🚀 Login with Instagram
