@@ -32,4 +32,4 @@
 ## 📹 Demo Video
 
 Watch a walkthrough of the working dashboard:  
-🎥(https://www.loom.com/share/ff0078bdb84e4f54934a6be1aadf2000?sid=3187c490-b93c-4101-a439-359e1323e75e)
+🎥https://www.loom.com/share/ff0078bdb84e4f54934a6be1aadf2000?sid=3187c490-b93c-4101-a439-359e1323e75e
